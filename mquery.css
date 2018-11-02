@@ -49,14 +49,15 @@
     display: flex;
     justify-content: center;
   }
-  /* Arrow */
+  /* Arrow  Icon */
 
   .main__col--mobile-only .icon {
     height: 20px;
     position: relative;
     top: 20px;
   }
-
+  /* Other icons */
+  
   .icon {
     height: 60px;
   }
