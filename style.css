@@ -1,0 +1,67 @@
+/* ======= Settings ======== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* ======= Typography ======== */
+h1.main__title,
+h2.main__col__title {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+h1.main__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2.main__col__title {
+  margin-bottom: 15px;
+}
+
+p.main__col__text {
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+/* Flexbox */
+
+.main {
+  padding: 30px 80px;
+}
+
+.main__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.main__col {
+  text-align: center;
+  width: 33%;
+}
+
+/* Arrow does not display on Desktop */
+.main__col--mobile-only {
+  display: none;
+}
+
+
+/* Icon */
+
+.icon {
+  height: 110px;
+}
