@@ -48,6 +48,7 @@
   .main__col--mobile-only {
     display: flex;
     justify-content: center;
+    width: 10%;
   }
   /* Arrow  Icon */
 
@@ -57,7 +58,7 @@
     top: 20px;
   }
   /* Other icons */
-  
+
   .icon {
     height: 60px;
   }
