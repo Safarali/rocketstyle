@@ -1,5 +1,5 @@
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
-  
+
   /* Layout */
 
   .row {
@@ -10,7 +10,7 @@
   .how-it-works-section {
     box-shadow: none;
   }
- 
+
 
 }
 
@@ -20,7 +20,7 @@
   /* Layout */
 
   .how-it-works-section {
-    padding: 3rem 3rem;
+    padding: 3rem 2rem;
     background-color: #f0f0f0;
     box-shadow: none;
   }
@@ -33,23 +33,25 @@
     margin: 0 auto;
   }
 
- 
+
   .column.column--mobile {
     display: block;
-    width: 10%;
   }
 
+  .column:not(:last-child) {
+    margin-right: -2rem;
+  }
 
   .hr {
     display: none;
   }
 
-  /* Typography */  
+  /* Typography */
 
   .section-header {
     letter-spacing: .1rem;
   }
- 
+
   .column__title {
     font-weight: 400;
     font-size: 1.2rem;
