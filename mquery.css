@@ -1,66 +1,78 @@
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
-  /* Typography */
-  h1.main__title,
-  h2.main__col__title {
-    font-size: 18px;
+  
+  /* Layout */
+
+  .row {
+    max-width: 61rem;
   }
 
-  p.main__col__text {
-    font-size: 16px;
-    line-height: 26px;
-  }
 
-  /* Flexbox */
-
-  .main {
-    padding: 30px 30px;
+  .how-it-works-section {
+    box-shadow: none;
   }
+ 
 
-  .icon {
-    height: 140px;
-  }
 }
 
 
 @media only screen and (min-width: 313px) and (max-width: 767px) {
-  p.main__col__text {
+
+  /* Layout */
+
+  .how-it-works-section {
+    padding: 3rem 3rem;
+    background-color: #f0f0f0;
+    box-shadow: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+ 
+  .column.column--mobile {
+    display: block;
+    width: 10%;
+  }
+
+
+  .hr {
     display: none;
   }
 
-  h1.main__title {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
+  /* Typography */  
 
-  h2.main__col__title {
-    font-size: 13px;
+  .section-header {
+    letter-spacing: .1rem;
+  }
+ 
+  .column__title {
     font-weight: 400;
+    font-size: 1.2rem;
     color: #666;
   }
 
-  /* Flexbox */
-
-  .main {
-    padding: 30px 30px;
-    background: #f0f0f0;
+  .column__text {
+    display: none;
   }
 
-  .main__col--mobile-only {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-  }
-  /* Arrow  Icon */
 
-  .main__col--mobile-only .icon {
-    height: 20px;
+  /* Icon */
+
+  .icon {
+    height: 6rem;
+    margin-bottom: .5rem;
+  }
+
+  /* Arrow icon */
+
+  .column--mobile .icon {
+    height: 2rem;
     position: relative;
     top: 20px;
   }
-  /* Other icons */
-
-  .icon {
-    height: 60px;
-  }
-
 }

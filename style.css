@@ -1,64 +1,97 @@
-/* ======= Settings ======== */
+/* Resets */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+/* It defines what 1rem is. It is 10px which is 62.5% of browsers font-size: 16px */
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* ======= Typography ======== */
-h1.main__title,
-h2.main__col__title {
+/* Layout */
+
+.how-it-works-section {
+  padding: 6rem 0;
+  box-shadow: inset 0 1rem 1rem -0.8rem rgba(0, 0, 0, 0.4);
+}
+
+
+.row {
+  max-width: 90rem;
+  margin: 0 auto 6rem auto;
+}
+
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.column {
+  width: calc((100% - 2 * 2rem) / 3);
+  float: left;
+  text-align: center;
+}
+
+.column:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.column--mobile {
+  display: none;
+}
+
+.hr {
+  height: 1px;
+  width: 90%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+.section-header,
+.column__title {
   color: #333;
-  font-size: 16px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
-h1.main__title {
+.section-header {
+  font-weight: 600;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
 }
 
-h2.main__col__title {
-  margin-bottom: 15px;
+.column__title {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
-p.main__col__text {
+.column__text {
   color: #666;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 2rem;
+  width: 90%;
+  margin: auto;
+
 }
-
-/* Flexbox */
-
-.main {
-  padding: 30px 80px;
-}
-
-.main__row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.main__col {
-  text-align: center;
-  width: 33%;
-}
-
-/* Arrow does not display on Desktop */
-.main__col--mobile-only {
-  display: none;
-}
-
 
 /* Icon */
 
